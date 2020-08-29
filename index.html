@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directives</title>
+</head>
+<body 
+    ng-app="mainApp"
+>
+
+    <h1>Директивы и то, с чем их кушают</h1>
+    <p>
+        Директивы - способ вставки относительно сложных блоков 
+        с собственным пространством имен (лексическим окружением)
+    </p>
+    <p>
+        Директивы создаются в модуле инструцией directive. 
+        В качестве аргументов передаются имя директивы и 
+        инициализирующая функция.
+    </p>
+    <p>
+        <b>Способы вставки:</b>
+        <br/>Атрибутом: (restrict: "A") : &lt;div dir1>HTML content&lt;/div>
+        <br/>Классом: (restrict: "C") : &lt;div class="dir1">HTML content&lt;/div>
+        <br/>Тегом: (restrict: "E") : &lt;dir1>HTML content&lt;/dir1>
+        <br/>Коментарием: (restrict: "M") : &lt;!-- directive:dir1 -->
+        <br/>Комбинации: (restrict: "ACEM")
+    </p>
+        <div dir1>HTML content</div>
+        <div class="dir1">HTML content</div>
+        <dir1>HTML content</dir1>
+        <!-- directive:dir1 -->
+
+        <dir2></dir2>
+
+
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<table style="width: 100%;" id="vidgBody">
+    <tr style="background-color: black;color: #d29b36">
+      <th>Названия валют</th>
+      <th>Краткое название</th>
+      <th>Стоимость</th>
+    </tr>
+    <tr ng-repeat="r in vidgRates">
+      <td class="vidgTd">{{r.txt}}</td>
+      <td class="vidgTd">{{r.cc}}</td>
+      <td class="vidgTd">{{r.rate}}</td>
+    </tr>
+  </table>

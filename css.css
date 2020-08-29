@@ -1,0 +1,40 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    font-family: arial;
+    user-select: none;
+}
+
+.vidgBtn{
+	display: inline-flex;
+	position: fixed;
+    top: 20px;
+	justify-content: center;
+    margin: auto;
+    font-weight: bold;
+    
+}
+
+.vidgBtnBtn:hover{
+    background-color: white;
+    color: #2a0303;
+    transform: scale(0.98);
+}
+.vidgBtnBtn{
+    cursor: pointer;
+	color: wheat;
+	box-sizing: border-box;
+	background-color: black;
+    padding: 20px 50px;
+    border-radius: 10px;
+    transition: 0.2s;
+    box-shadow: 0 0 10px 3px #cecece;
+}
+.active{
+    background-color: white;
+    color: #2a0303;
+}
+
+table , tr, td ,th {
+	 border: 2px solid white;
+}
